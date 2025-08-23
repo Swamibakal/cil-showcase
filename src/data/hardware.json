@@ -4,23 +4,12 @@
     "name": "Meta Quest 3",
     "category": "VR Headset",
     "image": "/assets/hardware/quest3.svg",
-    "specs": [
-      "MR passthrough",
-      "120Hz",
-      "Standalone"
-    ],
-    "useCases": [
-      "VR training",
-      "Immersive demos"
-    ],
+    "specs": ["MR passthrough", "120Hz", "Standalone"],
+    "useCases": ["VR training", "Immersive demos"],
     "links": [
-      {
-        "label": "Official",
-        "url": "https://www.meta.com/quest/"
-      }
+      { "label": "Official", "url": "https://www.meta.com/quest/" }
     ]
   },
- [
   {
     "id": "ajna-lens-pro",
     "name": "AjnaLens Pro",
@@ -50,49 +39,22 @@
       "Eye & hand tracking",
       "Passthrough AR with LiDAR"
     ],
-    "useCases": [
-      "Productivity",
-      "Entertainment",
-      "AR/VR prototyping",
-      "3D design & visualization"
-    ]
+    "useCases": ["Productivity", "Entertainment", "AR/VR prototyping", "3D design & visualization"]
   },
   {
     "id": "android-tablet",
     "name": "Android Tablet",
     "category": "Tablet Device",
     "image": "/assets/hardware/android-tablet.jpg",
-    "specs": [
-      "10–12 inch display",
-      "Android 13+",
-      "Multi-touch input",
-      "Stylus support"
-    ],
-    "useCases": [
-      "Mobile AR apps",
-      "E-learning",
-      "Productivity on the go",
-      "Content consumption"
-    ]
+    "specs": ["10–12 inch display", "Android 13+", "Multi-touch input", "Stylus support"],
+    "useCases": ["Mobile AR apps", "E-learning", "Productivity on the go", "Content consumption"]
   },
   {
-    "id": "ipad 10",
+    "id": "ipad-10",
     "name": "Apple iPad",
     "category": "Tablet Device",
     "image": "/assets/hardware/ipad.jpg",
-    "specs": [
-      "Liquid Retina display",
-      "iPadOS 17+",
-      "Apple Pencil support",
-      "M1/M2 chip variants"
-    ],
-    "useCases": [
-      "Educational AR apps",
-      "Creative design",
-      "Note-taking",
-      "Productivity"
-    ]
+    "specs": ["Liquid Retina display", "iPadOS 17+", "Apple Pencil support", "M1/M2 chip variants"],
+    "useCases": ["Educational AR apps", "Creative design", "Note-taking", "Productivity"]
   }
-]
-
 ]
