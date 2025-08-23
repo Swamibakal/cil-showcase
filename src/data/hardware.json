@@ -20,19 +20,79 @@
       }
     ]
   },
+ [
   {
-    "id": "hololens2",
-    "name": "HoloLens 2",
-    "category": "AR Headset",
-    "image": "/assets/hardware/hololens2.svg",
+    "id": "ajna-lens-pro",
+    "name": "AjnaLens Pro",
+    "category": "Mixed Reality Headset",
+    "image": "/assets/hardware/ajnalens-pro.jpg",
     "specs": [
-      "Hand tracking",
-      "Eye tracking"
+      "6DoF tracking",
+      "High-resolution optics",
+      "Lightweight ergonomic design",
+      "Integrated controllers"
     ],
     "useCases": [
-      "AR instructions",
-      "Visualization"
+      "Industrial training",
+      "Defense simulation",
+      "Healthcare applications",
+      "Enterprise collaboration"
+    ]
+  },
+  {
+    "id": "apple-vision-pro",
+    "name": "Apple Vision Pro",
+    "category": "Spatial Computing Headset",
+    "image": "/assets/hardware/apple-vision-pro.jpg",
+    "specs": [
+      "Dual 4K micro-OLED displays",
+      "Apple M2 + R1 chip",
+      "Eye & hand tracking",
+      "Passthrough AR with LiDAR"
     ],
-    "links": []
+    "useCases": [
+      "Productivity",
+      "Entertainment",
+      "AR/VR prototyping",
+      "3D design & visualization"
+    ]
+  },
+  {
+    "id": "android-tablet",
+    "name": "Android Tablet",
+    "category": "Tablet Device",
+    "image": "/assets/hardware/android-tablet.jpg",
+    "specs": [
+      "10–12 inch display",
+      "Android 13+",
+      "Multi-touch input",
+      "Stylus support"
+    ],
+    "useCases": [
+      "Mobile AR apps",
+      "E-learning",
+      "Productivity on the go",
+      "Content consumption"
+    ]
+  },
+  {
+    "id": "ipad 10",
+    "name": "Apple iPad",
+    "category": "Tablet Device",
+    "image": "/assets/hardware/ipad.jpg",
+    "specs": [
+      "Liquid Retina display",
+      "iPadOS 17+",
+      "Apple Pencil support",
+      "M1/M2 chip variants"
+    ],
+    "useCases": [
+      "Educational AR apps",
+      "Creative design",
+      "Note-taking",
+      "Productivity"
+    ]
   }
+]
+
 ]
