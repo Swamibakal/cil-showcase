@@ -1,16 +1,21 @@
-export default function Home(){
+export default function Home() {
   return (
-    <section>
-      <h1 className="text-3xl font-bold">Center for Immersive Learning</h1>
-      <p className="mt-3 text-gray-600 max-w-3xl">
-        Explore our VR/AR hardware, immersive experiences, and research. This app showcases
-        the lab’s capabilities for students, faculty, and industry visitors.
-      </p>
-      <ul className="mt-6 list-disc ml-6 text-gray-700 space-y-1">
-        <li>Interactive hardware showcase</li>
-        <li>Experience demos & videos</li>
-        <li>Projects, events, and collaborations</li>
-      </ul>
-    </section>
-  )
+    <div
+      className="relative h-screen w-full bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1626378722070-14adad9a5f85')",
+      }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white p-4">
+        <h1 className="text-5xl font-bold mb-4">
+          Center For Immersive Learning
+        </h1>
+        <h2 className="text-2xl font-light">
+          BITS PILANI Work Integrated Learning Program
+        </h2>
+      </div>
+    </div>
+  );
 }
