@@ -1,0 +1,38 @@
+[
+  {
+    "id": "quest3",
+    "name": "Meta Quest 3",
+    "category": "VR Headset",
+    "image": "/assets/hardware/quest3.svg",
+    "specs": [
+      "MR passthrough",
+      "120Hz",
+      "Standalone"
+    ],
+    "useCases": [
+      "VR training",
+      "Immersive demos"
+    ],
+    "links": [
+      {
+        "label": "Official",
+        "url": "https://www.meta.com/quest/"
+      }
+    ]
+  },
+  {
+    "id": "hololens2",
+    "name": "HoloLens 2",
+    "category": "AR Headset",
+    "image": "/assets/hardware/hololens2.svg",
+    "specs": [
+      "Hand tracking",
+      "Eye tracking"
+    ],
+    "useCases": [
+      "AR instructions",
+      "Visualization"
+    ],
+    "links": []
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ar-assembly",
+    "title": "AR Assembly Guide",
+    "type": "AR",
+    "thumb": "/assets/experiences/assembly.svg",
+    "video": "",
+    "summary": "Step-by-step AR overlay for machine assembly.",
+    "tech": [
+      "Unity",
+      "AR Foundation"
+    ]
+  }
+]
