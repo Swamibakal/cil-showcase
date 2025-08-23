@@ -1,12 +1,12 @@
 export default function Home() {
   return (
     <div
-      className="relative min-h-screen w-full bg-cover bg-center"
+      className="relative min-h-screen w-full"
       style={{
-        backgroundImage: "url('/assets/vr-bg.jpg')",
-        backgroundRepeat: "no-repeat",
+        backgroundImage: `url("/assets/vr-bg.jpg")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Dark overlay */}
