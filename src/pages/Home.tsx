@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div
-      className="relative w-screen min-h-screen overflow-hidden"
+      className="relative w-screen min-h-screen overflow-hidden m-0 p-0"
       style={{
         backgroundImage: `url("/assets/vr-bg.jpg")`,
         backgroundSize: "cover",
