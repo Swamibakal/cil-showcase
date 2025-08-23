@@ -6,7 +6,7 @@ export default function Home() {
         backgroundImage: "url('/assets/vr-bg.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        border: "5px solid red", // debug
+        backgroundPosition: "center",
       }}
     >
       {/* Dark overlay */}
