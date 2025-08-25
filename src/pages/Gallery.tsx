@@ -1,8 +1,8 @@
 // src/pages/Gallery.tsx
 import React from "react"
 
-// Convert Google Drive share link -> Direct image link
 function convertDriveLink(link: string): string {
+  // Extract file ID from the Google Drive share link
   const match = link.match(/\/d\/(.*?)\//)
   if (match && match[1]) {
     return `https://drive.google.com/uc?export=view&id=${match[1]}`
@@ -11,7 +11,7 @@ function convertDriveLink(link: string): string {
 }
 
 export default function Gallery() {
-  // 🔽 Paste your Google Drive share links here
+  // 🔽 Your Google Drive share links
   const shareLinks = [
     "https://drive.google.com/file/d/13d_pUh-sAECESvKhlMkwWXzLFaY96jAj/view?usp=sharing",
     "https://drive.google.com/file/d/1t5bFjWZ0vzFe7hffNWC8Z1I8vjjZ69w3/view?usp=sharing",
@@ -41,7 +41,7 @@ export default function Gallery() {
     "https://drive.google.com/file/d/1wjVBNPqAjgFveQr5e-O7K5CHKa2bxz6Q/view?usp=sharing",
   ]
 
-  // Convert them to direct image links
+  // Convert share links → direct image links
   const imgs = shareLinks.map(convertDriveLink)
 
   return (
