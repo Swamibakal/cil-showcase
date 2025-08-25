@@ -1,47 +1,31 @@
-// src/pages/Gallery.tsx
-import React from "react"
-
-function convertDriveLink(link: string): string {
-  const match = link.match(/\/d\/(.*?)\//)
-  if (match && match[1]) {
-    return `https://drive.google.com/uc?export=view&id=${match[1]}`
-  }
-  return link
-}
-
 export default function Gallery() {
-  // 🔽 Your Google Drive share links
-  const shareLinks = [
-    "https://drive.google.com/file/d/13d_pUh-sAECESvKhlMkwWXzLFaY96jAj/view?usp=sharing",
-    "https://drive.google.com/file/d/1t5bFjWZ0vzFe7hffNWC8Z1I8vjjZ69w3/view?usp=sharing",
-    "https://drive.google.com/file/d/15zO3mAQJdGpH6JHSx2CTeGpnkPIKENXW/view?usp=sharing",
-    "https://drive.google.com/file/d/1ijIf2mrs-mQ_FhkKhQQ4RMiiy-rxnlPG/view?usp=sharing",
-    "https://drive.google.com/file/d/1SR0XzyAzVOs2vx_AWH9cy9dhTzfxctwA/view?usp=sharing",
-    "https://drive.google.com/file/d/18IlCux8RI4hWB6E678dcZUfJUQCoRdY3/view?usp=sharing",
-    "https://drive.google.com/file/d/1vJqJzG9nUXLx8VcUe5xpn0yujsift7li/view?usp=sharing",
-    "https://drive.google.com/file/d/1KK7FY-vPVtCqnEYScfeCmcTaQU3nKMFS/view?usp=sharing",
-    "https://drive.google.com/file/d/1PF0cQXDGHsFRA1FoHwi2X8oPCkACGEmU/view?usp=sharing",
-    "https://drive.google.com/file/d/1hUPw-A05Z5deiuKSKXOsdcP__um7XeCu/view?usp=sharing",
-    "https://drive.google.com/file/d/1lvdRuV6QvwGRbWNNq6LKgc30KP12WLqg/view?usp=sharing",
-    "https://drive.google.com/file/d/1bia-AhAMgqdjZ_8gPPwwTpBw9G3OvbYX/view?usp=sharing",
-    "https://drive.google.com/file/d/1pvNHlaoPUOiaN0eVDJqBI-i6O2ZQKO75/view?usp=sharing",
-    "https://drive.google.com/file/d/1WYK26UBnC-IyGZE7leyFPxsFZ8dKaKaJ/view?usp=sharing",
-    "https://drive.google.com/file/d/125aQm2YmnJBoZt5VNFYbuF9_daYk2_Jq/view?usp=sharing",
-    "https://drive.google.com/file/d/1UzgUsrT9mGh1S4hpYSrbUMk-fttIcfZL/view?usp=sharing",
-    "https://drive.google.com/file/d/1FrpSfYRyQYPx5U_Uz2UFbgQU4rOg_7A8/view?usp=sharing",
-    "https://drive.google.com/file/d/139S838sOC2ngY8YVikGlYUoYtD59njeu/view?usp=sharing",
-    "https://drive.google.com/file/d/1AQBwxG2LcFAU7nYYVlr5Tl71OdD8ZoAt/view?usp=sharing",
-    "https://drive.google.com/file/d/1FnYAqtRuwFgL442MuwacAVx4N_ERM4tT/view?usp=sharing",
-    "https://drive.google.com/file/d/1Bk7iz8L3Gp8MCugBXeSKte0XIdPr4lMc/view?usp=sharing",
-    "https://drive.google.com/file/d/1R4KgaeE0PhA6XGCU-MRbfpb3VBg6coDJ/view?usp=sharing",
-    "https://drive.google.com/file/d/1M5jJKMoXGNBZVVfiSlh2dBL-JPaa-NsU/view?usp=sharing",
-    "https://drive.google.com/file/d/1N_RuW3Cv9xC4MbtlareQRAfX91kXnnlN/view?usp=sharing",
-    "https://drive.google.com/file/d/1-ht18QnGvDJPaFxktJanJzTDgalR1aw0/view?usp=sharing",
-    "https://drive.google.com/file/d/1wjVBNPqAjgFveQr5e-O7K5CHKa2bxz6Q/view?usp=sharing",
+  const imgs = [
+    "https://drive.google.com/uc?export=view&id=13d_pUh-sAECESvKhlMkwWXzLFaY96jAj",
+    "https://drive.google.com/uc?export=view&id=1t5bFjWZ0vzFe7hffNWC8Z1I8vjjZ69w3",
+    "https://drive.google.com/uc?export=view&id=15zO3mAQJdGpH6JHSx2CTeGpnkPIKENXW",
+    "https://drive.google.com/uc?export=view&id=1ijIf2mrs-mQ_FhkKhQQ4RMiiy-rxnlPG",
+    "https://drive.google.com/uc?export=view&id=1SR0XzyAzVOs2vx_AWH9cy9dhTzfxctwA",
+    "https://drive.google.com/uc?export=view&id=18IlCux8RI4hWB6E678dcZUfJUQCoRdY3",
+    "https://drive.google.com/uc?export=view&id=1Gd06H6fG_6spbSYYtCmjUmLyQ5W6qVUX",
+    "https://drive.google.com/uc?export=view&id=1kV8cFbzRe4WjglhZVyDa6iW0VRRfiFq6",
+    "https://drive.google.com/uc?export=view&id=1mOLW6s8mAp9k0_GJrg1a7Hul5JZ3IZ6y",
+    "https://drive.google.com/uc?export=view&id=1dZlXXGbM7Y52eXWIVbFInTWvJ74PNe13",
+    "https://drive.google.com/uc?export=view&id=1j1EXJq8A-wtvP2JmBDBf0hthqcm8Ph0C",
+    "https://drive.google.com/uc?export=view&id=1s5FqFKi5wDNVvOZbTj8UEm5eAqvFThV8",
+    "https://drive.google.com/uc?export=view&id=1AgF8mSm7gAMAkR9UZ0PP6zEk7ik7T6ir",
+    "https://drive.google.com/uc?export=view&id=1LrMS7IuVsyVVLZhts27GdB6S4z4r4A7U",
+    "https://drive.google.com/uc?export=view&id=1e-b10o3TXu-3c8xXQHlWlCev5bqumyeT",
+    "https://drive.google.com/uc?export=view&id=1lJz1J3TtQKkS13i95lFVdgM6RrS7Xb7M",
+    "https://drive.google.com/uc?export=view&id=1kKfIhbiOiKNIm0xJpmPz0bZ4MT7YOA7n",
+    "https://drive.google.com/uc?export=view&id=1P7E8mQ1n9wnQpQ2xE9lqvH7GbZdb1T0v",
+    "https://drive.google.com/uc?export=view&id=1kG7w7i_6yBvxlk0T6T_BiZbUUK3lYQdR",
+    "https://drive.google.com/uc?export=view&id=1R6HVHYTsu40FjKnJf5MUnQY_j2wr0O1r",
+    "https://drive.google.com/uc?export=view&id=1TtbtN2b5whTLPu7eutWiqI1j6PMQ09Yl",
+    "https://drive.google.com/uc?export=view&id=1LmKoL7T9QnvqgYdm4uVZzj90SgTzB5xM",
+    "https://drive.google.com/uc?export=view&id=1vJq7mM5aZZE7D4NwTxvZgrQjMWp7T3pS",
+    "https://drive.google.com/uc?export=view&id=1wqfD7jVjho6oBjO6oZVtzkLK4sHL_3pT",
+    "https://drive.google.com/uc?export=view&id=1v6ix2v9GmDN7OQSH64O0f9e6_8gdpY5b",
   ]
-
-  // Convert share links to direct image URLs
-  const imgs = shareLinks.map(convertDriveLink)
 
   return (
     <div className="p-6">
