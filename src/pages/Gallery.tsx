@@ -4,13 +4,13 @@ import React from "react"
 function convertDriveLink(link: string): string {
   const match = link.match(/\/d\/(.*?)\//)
   if (match && match[1]) {
-    return `https://drive.google.com/drive/folders/1b-mizthVwK4ahyaF9xuHvgEbtPIEdEzd?usp=sharing}`
+    return `https://drive.google.com/uc?export=view&id=${match[1]}`
   }
   return link
 }
 
 export default function Gallery() {
-  // 🔽 Paste your Google Drive share links here
+  // 🔽 Your Google Drive share links
   const shareLinks = [
     "https://drive.google.com/file/d/13d_pUh-sAECESvKhlMkwWXzLFaY96jAj/view?usp=sharing",
     "https://drive.google.com/file/d/1t5bFjWZ0vzFe7hffNWC8Z1I8vjjZ69w3/view?usp=sharing",
@@ -40,7 +40,7 @@ export default function Gallery() {
     "https://drive.google.com/file/d/1wjVBNPqAjgFveQr5e-O7K5CHKa2bxz6Q/view?usp=sharing",
   ]
 
-  // Convert them to direct image links
+  // Convert share links to direct image URLs
   const imgs = shareLinks.map(convertDriveLink)
 
   return (
