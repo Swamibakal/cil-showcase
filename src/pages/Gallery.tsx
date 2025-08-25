@@ -1,11 +1,11 @@
 // src/pages/Gallery.tsx
 import React from "react"
 
-// Convert Google Drive share link -> Thumbnail link
+// Convert Google Drive share link -> Direct image link
 function convertDriveLink(link: string): string {
   const match = link.match(/\/d\/(.*?)\//)
   if (match && match[1]) {
-    return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1000`
+    return `https://drive.google.com/uc?export=view&id=${match[1]}`
   }
   return link
 }
