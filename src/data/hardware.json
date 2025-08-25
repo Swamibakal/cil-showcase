@@ -1,85 +1,42 @@
 [
   {
-    "id": "quest3",
+    "id": "ipad",
+    "name": "Apple iPad",
+    "category": "Tablet",
+    "image": "/ipad.jpeg",
+    "specs": ["iPadOS", "Touchscreen", "Apple Pencil support"],
+    "useCases": ["Education AR apps", "Note-taking", "Productivity"]
+  },
+  {
+    "id": "android-tab",
+    "name": "Android Tablet",
+    "category": "Tablet",
+    "image": "/android tab.jpeg",
+    "specs": ["Android OS", "Large display", "Expandable storage"],
+    "useCases": ["AR apps", "Entertainment", "Work"]
+  },
+  {
+    "id": "vision-pro",
+    "name": "Apple Vision Pro",
+    "category": "Mixed Reality Headset",
+    "image": "/vision pro.jpeg",
+    "specs": ["visionOS", "Eye tracking", "Spatial computing"],
+    "useCases": ["Immersive AR", "3D visualization", "Productivity"]
+  },
+  {
+    "id": "quest-3",
     "name": "Meta Quest 3",
     "category": "VR Headset",
-    "image": "/assets/hardware/quest3.jpg",
-    "specs": ["MR passthrough", "120Hz", "Standalone"],
-    "useCases": ["VR training", "Immersive demos"],
-    "links": [
-      { "label": "Official", "url": "https://www.meta.com/quest/" }
-    ]
+    "image": "/quest 3.jpeg",
+    "specs": ["Passthrough AR", "VR gaming", "Standalone"],
+    "useCases": ["Gaming", "Education", "Training"]
   },
   {
-    "id": "ajna-lens-pro",
-    "name": "AjnaLens Pro",
+    "id": "ajna-lens",
+    "name": "Ajna Lens",
     "category": "Mixed Reality Headset",
-    "image": "/assets/hardware/ajnalens-pro.jpg",
-    "specs": [
-      "6DoF tracking",
-      "High-resolution optics",
-      "Lightweight ergonomic design",
-      "Integrated controllers"
-    ],
-    "useCases": [
-      "Industrial training",
-      "Defense simulation",
-      "Healthcare applications",
-      "Enterprise collaboration"
-    ]
-  },
-  {
-    "id": "apple-vision-pro",
-    "name": "Apple Vision Pro",
-    "category": "Spatial Computing Headset",
-    "image": "/assets/hardware/apple-vision-pro.jpg",
-    "specs": [
-      "Dual 4K micro-OLED displays",
-      "Apple M2 + R1 chip",
-      "Eye & hand tracking",
-      "Passthrough AR with LiDAR"
-    ],
-    "useCases": [
-      "Productivity",
-      "Entertainment",
-      "AR/VR prototyping",
-      "3D design & visualization"
-    ]
-  },
-  {
-    "id": "android-tablet",
-    "name": "Android Tablet",
-    "category": "Tablet Device",
-    "image": "/assets/hardware/android-tablet.jpg",
-    "specs": [
-      "10–12 inch display",
-      "Android 13+",
-      "Multi-touch input",
-      "Stylus support"
-    ],
-    "useCases": [
-      "Mobile AR apps",
-      "E-learning",
-      "Productivity on the go",
-      "Content consumption"
-    ]
-  },
-  {
-    "id": "ipad-10",
-    "name": "Apple iPad",
-    "category": "Tablet Device",
-    "image": "/assets/hardware/ipad.jpg",
-    "specs": [
-      "Liquid Retina display",
-      "iPadOS 17+",
-      "Apple Pencil support",
-      "M1/M2 chip variants"
-    ],
-    "useCases": [
-      "Educational AR apps",
-      "Creative design",
-      "Note-taking",
-      "Productivity"
-    ]
+    "image": "/ajna lense.jpg",
+    "specs": ["Made in India", "Industrial AR", "Training focus"],
+    "useCases": ["Skill training", "Education", "Enterprise solutions"]
   }
 ]
