@@ -15,7 +15,7 @@ export default function Home() {
           Center For Immersive Learning
         </h1>
         <h2 className="text-2xl font-light">
-          BITS PILANI Work Integrated Learning Program
+          BITS Pilani Work Integrated Learning Program
         </h2>
       </div>
     </div>
