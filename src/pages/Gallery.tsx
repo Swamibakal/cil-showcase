@@ -3,7 +3,6 @@ import React, { useState } from "react"
 export default function Gallery() {
   const imgs = [
     "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/IMG20250817115709.jpg",
-    "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/IMG20250817115709.jpg",
     "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/IMG20250817115845.jpg",
     "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/WILP0563.JPG",
     "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/WILP0572.JPG",
