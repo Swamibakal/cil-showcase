@@ -19,6 +19,8 @@ export default function Gallery() {
     "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/WhatsApp%20Image%202025-08-25%20at%2010.38.10_1f29bd9a.jpg",
     "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/WhatsApp%20Image%202025-08-25%20at%2010.39.00_186743ef.jpg",
     "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/WhatsApp%20Image%202025-08-25%20at%2010.39.00_195da7aa.jpg",
+    "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/1111.jpg",
+    "https://raw.githubusercontent.com/Swamibakal/lab-gallery/main/2222.jpg",  
   ]
 
   const [selectedImg, setSelectedImg] = useState(null)
